@@ -10,17 +10,23 @@ import java.util.Date;
 public class University {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="stud_id")
+    @Column(name="studId")
     private Long stId;
 
-    @Column(name="stud_admno")
+    @Column(name="regNo")
     private String regNo;
 
-    @Column(name="stud_name")
-    private String name;
+    @Column(name="fname")
+    private String fname;
+    
+    @Column(name="mname")
+    private String mname;
+    
+    @Column(name="lname")
+    private String lname;
 
     @Lob
-    @Column(name="stud_photo")
+    @Column(name="studPhoto")
     private byte[] photo;
 
     @Transient
@@ -28,22 +34,25 @@ public class University {
 
 
 
-    @Column(name="stud_doc")
-    private Date completionDate;
+    @Column(name="graduationDate")
+    private Date graduationDate;
 
-    @Column(name="stud_phones")
-    private String phone;
+    @Column(name="faculty")
+    private String faculty;
+    
+    @Column(name="department")
+    private String department;
 
-    @Column(name="kcpe_marks")
+    @Column(name="course")
+    private String course;
+    
+    @Column(name="level")
+    private String level;
+    
+    @Column(name="points")
     private String points;
 
-    @Column(name="honours")
-    private String honours;
-
-
-
-    @Column(name="student_email")
-    private String email;
+   
 
     public Long getStId() {
         return stId;
@@ -61,13 +70,6 @@ public class University {
         this.regNo = regNo;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public MultipartFile getFile() {
         return file;
@@ -85,21 +87,7 @@ public class University {
         this.photo = photo;
     }
 
-    public Date getCompletionDate() {
-        return completionDate;
-    }
-
-    public void setCompletionDate(Date completionDate) {
-        this.completionDate = completionDate;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+   
 
     public String getPoints() {
         return points;
@@ -109,19 +97,70 @@ public class University {
         this.points = points;
     }
 
-    public String getHonours() {
-        return honours;
-    }
+	public String getFname() {
+		return fname;
+	}
 
-    public void setHonours(String honours) {
-        this.honours = honours;
-    }
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getMname() {
+		return mname;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setMname(String mname) {
+		this.mname = mname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public Date getGraduationDate() {
+		return graduationDate;
+	}
+
+	public void setGraduationDate(Date graduationDate) {
+		this.graduationDate = graduationDate;
+	}
+
+	public String getFaculty() {
+		return faculty;
+	}
+
+	public void setFaculty(String faculty) {
+		this.faculty = faculty;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	
+   
 }

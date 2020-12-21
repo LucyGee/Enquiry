@@ -18,7 +18,8 @@
   <meta name="author" content="">
 
   <title>Login page</title>
-  <link rel="icon" type="image/jpg" href="images/graduation.jpg"/>
+    <link type="image/jpg" href="<c:url value='/libs/bootstrap/images/graduation.jpg'/>" rel="icon">
+
 
   <!-- Custom fonts for this theme -->
    <!-- Theme CSS -->
@@ -49,8 +50,7 @@
   <section class="page-section" style="background-image:url('images/graduation_hat.jpg')">
         <div class="container-fluid">
             <div class="text-center text-primary mt-5">
-                 <h4 class="text-success text-center mt-3">${info3}</h4>
-                
+               <h2>${message}</h2>
             </div>
             <div class="row mt-3">
                

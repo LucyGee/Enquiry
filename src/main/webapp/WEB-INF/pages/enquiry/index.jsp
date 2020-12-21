@@ -14,7 +14,8 @@
   <meta name="author" content="">
 
   <title>Landing page</title>
-  <link rel="icon" type="image/jpg" href="images/graduation.jpg"/>
+    <link type="image/jpg" href="<c:url value='/libs/bootstrap/images/graduation.jpg'/>" rel="icon">
+
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -57,8 +58,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="images/graduation.jpg" alt="">
-
+      <img class="masthead-avatar mb-5" src="<c:url value='/libs/bootstrap/images/graduation.jpg'/>" alt="">
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">Welcome</h1>
 

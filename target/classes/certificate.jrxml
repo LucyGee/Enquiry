@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificate" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4435589a-5479-4408-8f2b-4df64a8ba8ca">
+	<parameter name="studPhoto" class="java.lang.Object"/>
+	<field name="regNo" class="java.lang.String"/>
+	<field name="fname" class="java.lang.String"/>
+	<field name="mname" class="java.lang.String"/>
+	<field name="graduationDate" class="java.util.Date"/>
+	<field name="faculty" class="java.lang.String"/>
+	<field name="course" class="java.lang.String"/>
+	<field name="points" class="java.lang.String"/>
+	<field name="level" class="java.lang.String"/>
+	<field name="lname" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="83dfd07a-60a4-4def-b789-6949941d3360"/>
+				<staticText>
+					<reportElement x="20" y="20" width="400" height="43" forecolor="#FFFFFF" uuid="19bfa7ca-30e7-4476-8d88-7e851d6aa666"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[EGERTON UNIVERSITY]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="400" y="70" width="180" height="20" forecolor="#FFFFFF" uuid="57380223-8360-484d-b03d-1caf48842f42"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Student Certificate]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="200">
+			<staticText>
+				<reportElement x="60" y="100" width="411" height="30" uuid="7689d708-6582-4160-8dbf-d4a7fd32d8b5"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[This is to certify that the University Council hereby confers on]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="120" width="100" height="30" uuid="d005e2f7-9dc1-4759-9602-345f6f414efe"/>
+				<textFieldExpression><![CDATA[$F{fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="120" width="102" height="50" uuid="19067432-f238-43e7-9fa7-9b81f9a643aa"/>
+				<textFieldExpression><![CDATA[$F{mname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="120" width="100" height="30" uuid="2403178c-2efb-4a1c-97c0-3093cacf1748"/>
+				<textFieldExpression><![CDATA[$F{lname}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="240" y="10" width="87" height="80" uuid="2106a295-67e4-431c-af5f-e362ea6df1a5"/>
+				<imageExpression><![CDATA[$P{studPhoto}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="227" y="160" width="100" height="30" uuid="101a0c99-6d44-4044-b974-a61e4323fd0f"/>
+				<textFieldExpression><![CDATA[$F{regNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="180">
+			<staticText>
+				<reportElement x="130" y="90" width="383" height="30" uuid="df21d80c-5787-415f-ba74-6d3cb51ea212"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[with all rights, priviledges and obligation thereto appertaining at a congregation held at the University on]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="130" width="100" height="30" uuid="aa43e0f9-b522-43c6-82fc-8b89f8caf3bd"/>
+				<textFieldExpression><![CDATA[$F{graduationDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="40" width="240" height="30" uuid="5cac9238-37c2-475a-b54a-20106b66e73f"/>
+				<textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="30" uuid="ba6d1bce-dbf9-421e-883a-cc438036216e"/>
+				<text><![CDATA[the Degree of ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="140" width="110" height="30" uuid="ef899b89-688f-4d84-9dc4-edac400497c8"/>
+				<text><![CDATA[Registrar(Academic Affairs)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="110" height="30" uuid="f605c0bd-f9d3-41e7-bcb9-c559e9205c33"/>
+				<text><![CDATA[Vice Chancellor]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="32">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="d6fe0d4e-03a8-4afb-ad5e-5becba6a41dc"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="0f1c8bde-7b60-4978-8f6f-9243a367aeb7"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="5e107697-8fe3-452d-bfd7-2017fc35dd95"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

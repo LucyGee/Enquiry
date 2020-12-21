@@ -12,6 +12,8 @@
 <html>
 <head>
     <title>Verification Page</title>
+      <link type="image/jpg" href="<c:url value='/libs/bootstrap/images/graduation.jpg'/>" rel="icon">
+    
     <link type="text/css" href="<c:url value='/libs/bootstrap/dist/css/bootstrap.min.css' /> "  rel="stylesheet">
         <link type="text/css" href="<c:url value='/libs/bootstrap/dist/css/freelancer.css' /> "  rel="stylesheet">
     <link type="text/css" href="<c:url value='/libs/bootstrap/dist/css/sb-admin-2.css' /> "  rel="stylesheet">
@@ -83,29 +85,7 @@
     <%--<link rel="stylesheet" type="text/css" href="<c:url value='/libs/css/jquery-ui.min.css' />">--%>
 </head>
 
-<body id="page-top">
-  <!-- Navigation -->
-   <ul class="navbar-nav ml-auto">
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Verify </a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-         
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login">Log Out</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-   </ul>
+
 <div class="x_panel">
     <div class="x_title">
         <h3> Student Details</h3>

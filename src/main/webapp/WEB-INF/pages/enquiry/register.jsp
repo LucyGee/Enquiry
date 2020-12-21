@@ -18,7 +18,8 @@
   <meta name="author" content="">
 
   <title>Registration page</title>
-  <link rel="icon" type="image/jpg" href="images/graduation.jpg"/>
+    <link type="image/jpg" href="<c:url value='/libs/bootstrap/images/graduation.jpg'/>" rel="icon">
+
   <!-- Theme CSS -->
     <link type="text/css" href="<c:url value='/libs/bootstrap/dist/css/freelancer.css' /> "  rel="stylesheet">
     <link type="text/css" href="<c:url value='/libs/bootstrap/dist/css/sb-admin-2.css' /> "  rel="stylesheet">
@@ -46,7 +47,7 @@
     </div>
   </nav>
 
-        <section class="page-section" style="background-image:url('images/graduation_hat.jpg')">  
+        <section class="page-section" style="background-image:url(value='/libs/bootstrap/images/graduation_hat.jpg')">  
         <div class="container">
              <h4 class="text-success text-center mt-3">${info1}</h4>
             <h4 class="text-success text-center mt-3">${info2}</h4>
